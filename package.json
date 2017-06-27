@@ -38,5 +38,13 @@
     "bookshelf-modelbase"
   ],
   "author": "quophyie",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quophyie/qute-bookshelf-repository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quophyie/qute-bookshelf-repository/issues"
+  },
+  "homepage": "https://github.com/quophyie/qute-bookshelf-repository#readme"
 }
