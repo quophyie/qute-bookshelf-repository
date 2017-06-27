@@ -1,0 +1,42 @@
+{
+  "name": "qute-bookshelf-repository",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "standard": "node node_modules/standard/bin/cmd",
+    "test": "npm run standard && node_modules/mocha/bin/mocha test/"
+  },
+  "dependencies": {
+    "bookshelf": "^0.10.3",
+    "bookshelf-camelcase": "^1.1.4",
+    "joi": "^10.2.2",
+    "knex": "^0.12.8",
+    "pg": "^6.1.4",
+    "quantal-base-model": "^0.0.5",
+    "quantal-errors": "^0.0.5"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "eslint": "^3.17.1",
+    "eslint-config-standard": "^7.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "bookshelf-modelbase": "^2.10.3",
+    "mocha": "^2.4.5",
+    "standard": "^9.0.1"
+  },
+  "description": "A simple repository that manages a **`single`**  [bookshelf-modelbase](https://github.com/bsiddiqui/bookshelf-modelbase) model which is in turn a [bookshelf model](http://bookshelfjs.org/).  This repository provides many commonly used methods that are found in repository classes / objects This repository should be used as as abstraction layer between the [bookshelf model](http://bookshelfjs.org/) and services to prevent the bookshelf models from leaking into services (i.e. encourages loose coupling) This module should be extended / inherited to add additional functionality **`qute-bookshelf-repository`** will return JSON objects by default. This behaviour can be controlled by the **`bConvertResultToJson`** (defaults to **`true`**) variable that is passed to every method in the API . If  **`bConvertResultToJson`**  is set to **`false`**, the [bookshelf model](http://bookshelfjs.org/) will be returned.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "bookshelf",
+    "repository",
+    "bookshelf-modelbase"
+  ],
+  "author": "quophyie",
+  "license": "ISC"
+}
