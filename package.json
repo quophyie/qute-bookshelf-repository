@@ -1,10 +1,12 @@
 {
   "name": "qute-bookshelf-repository",
   "version": "0.0.1",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "standard": "node node_modules/standard/bin/cmd",
-    "test": "npm run standard && node_modules/mocha/bin/mocha test/"
+    "test": "npm run standard && node_modules/mocha/bin/mocha test/",
+    "build": "node node_modules/babel-cli/bin/babel lib --out-dir dist",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "bookshelf": "^0.10.3",
@@ -16,6 +18,13 @@
     "quantal-errors": "^0.0.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^8.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "code": "^4.0.0",
     "eslint": "^3.17.1",
     "eslint-config-standard": "^7.0.1",
